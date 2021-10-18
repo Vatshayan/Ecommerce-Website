@@ -1,0 +1,111 @@
+body { 
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(211, 174, 180);
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+/*header*/
+header {
+  background-color: rgb(37, 22, 2);
+  color: pink;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: orange 8px solid;
+}
+header a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header ul{
+  margin: 0;
+  padding: 0;
+ 
+}
+header li{
+  float: left;
+  display: inline;
+  padding: 0 50px 0 100px;
+  
+}
+header #branding{
+  float: left;
+}
+header #branding h1{
+  margin: 0;
+}
+header .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/*showcase*/
+#showcase{
+  min-height: 400px;
+  
+ /* background-image: justify;*/
+  text-align: center;
+  /*color: #cccccc;*/
+ display: flex;
+
+}
+#showcase h1{
+  margin-top: 50px;
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-style: oblique;
+}
+#showcase p{
+  font-size: 20px;
+  font-style: normal;
+}
+#showcase img{
+  height: 24%;
+ width: 24%;
+}
+
+/*#socialmedia{
+margin-top: 20px;
+}*/
+/*#socialmedia*/ 
+#showcase .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  margin: unset;
+}
+/*#socialmedia */
+#showcase .box img{
+  width: 30px;
+  height: 30px;
+}
+#showcase h2{
+  text-align: left;
+  font-size: 20px;
+  margin-top: 100px;
+}
+#showcase h3{
+  font-size: 15px;
+}
+
+footer {
+  padding: 5px;
+  margin-top: 0px;
+  color: #cccccc;
+  background-color: #e8491d;
+  text-align: center;
+  font-weight: bold;
+}

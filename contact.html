@@ -1,0 +1,207 @@
+<style>
+body{margin:0;padding:0}
+#ss-form input:focus ~ label,
+#ss-form textarea:focus ~ label,
+#ss-form input:valid ~ label,
+#ss-form textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #e8554e;
+  top: -2.25rem;
+  -webkit-transition: all 0.125s ease;
+  transition: all 0.125s ease;
+}
+
+#ss-form .styled-input {
+  width: 33.3333%;
+  margin: 2rem 0 1rem;
+  padding: 0;
+  position: relative;
+}
+
+#ss-form .styled-input-in {
+  position: relative;
+}
+
+#ss-form .styled-input label {
+  color: #999;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  line-height: 1;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#ss-form .styled-input.wide {
+  width: 100%;
+}
+
+#ss-form input,
+#ss-form textarea {
+  padding: 1rem 1rem;
+  border: 1px solid #ddd;
+  width: 100%;
+  font-size: 1rem;
+  background: #fafafa;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#ss-form input ~ .span1,
+#ss-form textarea ~ .span1 {
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #e8554e;
+  position: absolute;
+  left: 50%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#ss-form input ~ .span2,
+#ss-form textarea ~ .span2 {
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #e8554e;
+  position: absolute;
+  right: 50%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#ss-form input ~ span {
+  bottom: 0;
+}
+
+#ss-form input:focus,
+#ss-form textarea:focus {
+  outline: 0;
+}
+
+#ss-form input:focus ~ .span1,
+#ss-form textarea:focus ~ .span1,
+#ss-form input:focus ~ .span2,
+#ss-form textarea:focus ~ .span2 {
+  width: 50%;
+}
+
+#ss-form textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+#ss-form .btn {
+  font-family: "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 0;
+  padding: 0 25px;
+  height: 51px;
+  line-height: 51px;
+  color: #333;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin: 10px 0 0;
+  background-image: none;
+}
+
+#ss-form .btn-default:hover,
+#ss-form .btn-default:focus {
+  background-color: #e8554e;
+  border: 1px solid #df4f49;
+  color: white;
+  outline: 0;
+}
+
+#fade {
+    opacity: 0;
+  display: none;
+}
+.thanks_layout{text-align: center; position: fixed; top:0; left:0; bottom:0; right:0; background:rgba(255,255,255,.8);z-index:99999}
+.thanks_message{font-family: "Helvetica", "Arial", sans-serif;width:50%;background:#fff;border-radius:5px;padding:20px;border:1px solid #DEDEDE;text-align: center; color:#333; position: absolute; top: 10%; left: 50%;margin-left:-25%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.thanks_message .close a{position:absolute; top:-15px; right: -15px; width:20px; height:20px; line-height:20px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:100%;color:#333;font-family: "Helvetica", "Arial", sans-serif;font-size:18px;text-decoration:none}
+@media screen and (max-width:768px){.thanks_message{width:90%!important;margin-left:-45%!important;}
+}
+@media screen and (max-width:414px){#ss-form .styled-input {
+  width: 100%;
+}
+}
+</style>
+
+<script type="text/javascript">
+var submitted=false;
+var fadeEffect=function(){
+ return{
+  init:function(id, flag, target){
+   this.elem = document.getElementById(id);
+   clearInterval(this.elem.si);
+   this.target = target ? target : flag ? 100 : 0;
+   this.flag = flag || -1;
+   this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 0;
+   this.elem.si = setInterval(function(){fadeEffect.tween()}, 20);
+  },
+  tween:function(){
+   if(this.alpha == this.target){
+    clearInterval(this.elem.si);
+   }else{
+    var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+    this.elem.style.opacity = value / 100;
+    this.elem.style.filter = 'alpha(opacity=' + value + ')';
+    this.alpha = value
+   }
+  }
+ }
+}();
+function myFunction() {
+    location.reload();
+}
+</script>
+<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){);}" style="display: none;"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSf0qJrZSVFIhFuQ5jDtprluFI1jRzhYlSxRnTL_Zf3KkoN5hw/formResponse" id="ss-form" method="POST" onsubmit="fadeEffect.init('fade', 1);document.getElementById('fade').style.display = 'block'" target="hidden_iframe">
+          <div class="styled-input">
+                        <div class="styled-input-in">
+                <input type="text" aria-label="Name" name="entry.2005620554" value="" id="entry.2005620554" dir="auto" title="" required="required">
+                                <label>Name</label>
+                                <span class="span1"></span><span class="span2"></span>
+            </div>
+          </div>
+          <div class="styled-input">
+                        <div class="styled-input-in">
+                <input type="email" aria-label="Email" name="entry.1045781291" value="" id="entry.1045781291" dir="auto" title="Must be a valid email address" required="required">
+                                <label>Email</label>
+                                <span class="span1"></span><span class="span2"></span>
+            </div>
+          </div>
+          <div class="styled-input wide">
+                        <div class="styled-input-in">
+                <textarea aria-label="Comments" name="entry.839337160" rows="8" cols="0" id="entry.839337160" dir="auto" aria-required="true" required="required"></textarea>
+                                <label>Message</label>
+                                <span class="span1"></span><span class="span2"></span>
+            </div>
+          </div>
+          <input name="draftResponse" type="hidden" value="[,,&quot;3698745647546576630&quot;]">
+                    <input name="pageHistory" type="hidden" value="0">
+                    <input name="fbzx" type="hidden" value="3698745647546576630">
+          <button type="submit" name="submit" class="btn btn-default">Send</button>
+          </div>
+      </form>
+            <div id="fade">
+<div class="thanks_layout">
+<div class="thanks_message">
+<img alt="Thumb" height="48" width="48" src="https://4.bp.blogspot.com/-rY5km74yj_I/V1ItqrbspBI/AAAAAAAAmxA/SK-aLPTjyuo8uiSYylRJ4tLslk2LJ581QCLcB/s1600/ic_thumb_up_black_24dp_2x.png" />
+        <h2>Form submitted successfully</h2>
+        <div>Jika tidak ada halangan dan kesibukan lainnya, admin akan langsung merespon pesan yang Anda kirimkan.</div>
+        <div class="close"><a href="javascript:void(0)" onclick="document.getElementById('fade').style.display = 'none' ;myFunction()" title="Close">&times;</a></div>
+</div>
+</div>
+</div>

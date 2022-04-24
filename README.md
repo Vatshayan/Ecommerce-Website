@@ -33,4 +33,6 @@ If you Like Idea/ Research Paper/Project then Mail or Click on Star buttonğŸ™ğŸ
 **This is Open Source Web development Project**
 
 
-### Other React Website Project Education Portal : https://youtu.be/Klzemo208EA
+### Other New React base Project:
+1. Education Portal : https://youtu.be/Klzemo208EA
+2. Men Grooming Centre : https://youtu.be/3yqVkelIZYk

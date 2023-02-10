@@ -1,5 +1,5 @@
 # Ecommerce-Website-College-Project
-Final Year Project for students as Ecommerce website especially different webpages. Top class Website Development project that made by combination of front end programming languages such as HTML, CSS &amp; JS.
+FDự án cuối năm cho sinh viên làm trang web Thương mại điện tử, đặc biệt là các trang web khác nhau. Dự án phát triển trang web đẳng cấp hàng đầu được thực hiện bằng cách kết hợp các ngôn ngữ lập trình giao diện người dùng như HTML, CSS &amp; JS.
 
 ### Click on play button see Demo:
 
@@ -7,36 +7,36 @@ https://user-images.githubusercontent.com/28294942/137707143-5db5ccac-f475-42b5-
 
 
 
-**You Can use this Beautiful Project for your college Project and get good marks too.**
+**Bạn có thể sử dụng Dự án đẹp này cho Dự án đại học của mình và cũng đạt điểm cao.**
 
-Email me Now **vatshayan007@gmail.com** to get this Full Project Code, PPT, Report, Synopsis, Video Presentation and Research paper of this Project.
+Email me Now **alan45walker12@gmail.com** để nhận toàn bộ mã dự án, PPT, báo cáo, tóm tắt, trình bày video và tài liệu nghiên cứu của dự án này.
 
 💌 Feel free to contact me for any kind of help on any projects.
  
-### HOW TO RUN THE PROJECT-
-⚡ Email me at **vatshayan007@gmail.com** to get a detailed Guide report with Code to run the project with source Code.
+### CÁCH CHẠY DỰ ÁN-
+⚡ Email me at **alan45walker12@gmail.com** để được báo Hướng dẫn chi tiết bằng Code chạy project bằng source Code.
 
-### Need Code, Documents & Explanation video ? 
+### Cần Code, Tài liệu & Video giải thích ? 
 
 ## How to Reach me :
 
-### Mail : vatshayan007@gmail.com 
+### Mail : alan45walker12@gmail.com 
 
-### WhatsApp: **+91 9310631437** (Helping 24*7) **[CHAT](https://wa.me/message/CHWN2AHCPMAZK1)** 
+### WhatsApp: **84 365629897** (Helping 24*7) **[CHAT](https://wa.me/message/CHWN2AHCPMAZK1)** 
 
-### Website : https://www.finalproject.in/
+### Website : https://ecommerce-website-site.netlify.app/
 
 ### 1000 Computer Science Projects : https://www.computer-science-project.in/
 
-Mail/Message me for Projects Help 🙏🏻
+Gửi thư/Nhắn tin cho tôi để được trợ giúp về dự án 🙏🏻
 
 
 ### Liked Project?
-If you Like Idea/ Research Paper/Project then Mail or Click on Star button🙏🏻
+Nếu bạn thích Ý tưởng/Bài nghiên cứu/Dự án thì hãy gửi thư hoặc nhấp vào nút Sao🙏🏻
 
-**This is Open Source Web development Project**
+**Đây là Dự án phát triển Web mã nguồn mở**
 
-### Other New React base Project:
-1. College Library Website : https://youtu.be/CB2nGRGCRl4
-2. Men Grooming Centre : https://youtu.be/3yqVkelIZYk
-3. Education Portal : https://youtu.be/Klzemo208EA
+### Dự án cơ sở React mới khác:
+1. Trang web thư viện đại học : https://youtu.be/CB2nGRGCRl4
+2. Trung tâm chăm sóc tóc nam : https://youtu.be/3yqVkelIZYk
+3. Cổng thông tin giáo dục : https://youtu.be/Klzemo208EA

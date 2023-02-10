@@ -273,3 +273,22 @@ input{
     background-color: #007bff;
     border-color: #007bff;
   }
+
+<style>
+    footer {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background-color: #333333;
+    }
+
+    p.copyright {
+        position: absolute;
+        width:  80%;
+        color: #fff;
+        line-height: 40px;
+        font-size: 1.2em;
+        text-align: right;
+        bottom:0;
+    }
+</style>

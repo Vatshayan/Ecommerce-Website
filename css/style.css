@@ -70,7 +70,6 @@ p{
    -webkit-overflow-scrolling: touch;
    -ms-overflow-style: -ms-autohiding-scrollbar; 
 }
-
 .box-container {
   flex: 0 0 auto; 
 } */
@@ -382,6 +381,7 @@ ul{
 }
 
 .copyright{
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -419,22 +419,3 @@ ul{
         cursor: pointer;
     }
 }
-
-<style>
-    footer {
-        position: relative;
-        height: 300px;
-        width: 100%;
-        background-color: #333333;
-    }
-
-    p.copyright {
-        position: absolute;
-        width: 100%;
-        color: #fff;
-        line-height: 40px;
-        font-size: 0.7em;
-        text-align: center;
-        bottom:0;
-    }
-</style>

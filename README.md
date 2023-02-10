@@ -1,7 +1,7 @@
 # Ecommerce-Website-College-Project
 Dự án cuối năm cho sinh viên làm trang web Thương mại điện tử, đặc biệt là các trang web khác nhau. Dự án phát triển trang web đẳng cấp hàng đầu được thực hiện bằng cách kết hợp các ngôn ngữ lập trình giao diện người dùng như HTML, CSS &amp; JS.
 
-### Click on play button see Demo:
+### Bấm vào nút play xem Demo:
 
 https://user-images.githubusercontent.com/28294942/137707143-5db5ccac-f475-42b5-9065-0788094b70db.mov
 
@@ -11,18 +11,18 @@ https://user-images.githubusercontent.com/28294942/137707143-5db5ccac-f475-42b5-
 
 Email me Now **alan45walker12@gmail.com** để nhận toàn bộ mã dự án, PPT, báo cáo, tóm tắt, trình bày video và tài liệu nghiên cứu của dự án này.
 
-💌 Feel free to contact me for any kind of help on any projects.
+💌 Vui lòng liên hệ với tôi để được trợ giúp về bất kỳ dự án nào.
  
 ### CÁCH CHẠY DỰ ÁN-
 ⚡ Email me at **alan45walker12@gmail.com** để được báo Hướng dẫn chi tiết bằng Code chạy project bằng source Code.
 
 ### Cần Code, Tài liệu & Video giải thích ? 
 
-## How to Reach me :
+## Làm thế nào để tiếp cận tôi :
 
 ### Mail : alan45walker12@gmail.com 
 
-### WhatsApp: **84 365629897** (Helping 24*7) **[CHAT](https://wa.me/message/CHWN2AHCPMAZK1)** 
+### WhatsApp: **+84 365629897** (Helping 24*7) **[CHAT](https://wa.me/message/CHWN2AHCPMAZK1)** 
 
 ### Website : https://ecommerce-website-site.netlify.app/
 

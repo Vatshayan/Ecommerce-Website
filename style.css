@@ -70,7 +70,6 @@ p{
    -webkit-overflow-scrolling: touch;
    -ms-overflow-style: -ms-autohiding-scrollbar; 
 }
-
 .box-container {
   flex: 0 0 auto; 
 } */
@@ -382,7 +381,7 @@ ul{
 }
 
 .copyright{
-        text-align: center;
+    text-align: center;
 }
 
 .menu-icon{
@@ -419,4 +418,3 @@ ul{
         cursor: pointer;
     }
 }
-

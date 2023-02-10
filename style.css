@@ -382,8 +382,13 @@ ul{
 }
 
 .copyright{
-    text-align: center;
-    font-size: 1.0em;
+    position: absolute;
+        width:  100%;
+        color: #fff;
+        line-height: 40px;
+        font-size: 1.2em;
+        text-align: center;
+        bottom:0;
 }
 
 .menu-icon{

@@ -1,5 +1,5 @@
 # Ecommerce-Website-College-Project
-FDự án cuối năm cho sinh viên làm trang web Thương mại điện tử, đặc biệt là các trang web khác nhau. Dự án phát triển trang web đẳng cấp hàng đầu được thực hiện bằng cách kết hợp các ngôn ngữ lập trình giao diện người dùng như HTML, CSS &amp; JS.
+Dự án cuối năm cho sinh viên làm trang web Thương mại điện tử, đặc biệt là các trang web khác nhau. Dự án phát triển trang web đẳng cấp hàng đầu được thực hiện bằng cách kết hợp các ngôn ngữ lập trình giao diện người dùng như HTML, CSS &amp; JS.
 
 ### Click on play button see Demo:
 

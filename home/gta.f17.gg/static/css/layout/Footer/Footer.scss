@@ -1,0 +1,40 @@
+@use "src/styles/var.scss" as var;
+
+footer {
+  background-color: #222636;
+  height: 240px;
+
+  .bg-linear {
+    height: 100%;
+    position: relative;
+    clip-path: polygon(0 65%, 125% 0, 100% 100%, 0% 100%);
+    background: linear-gradient(213.7deg, #8800f0 17.12%, #351fb3 75.15%);
+  }
+
+  .footer-content {
+    position: absolute;
+    bottom: 22%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+    .text {
+      text-align: right;
+      margin-right: 1rem;
+    }
+
+    .list-social {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 1rem;
+
+      img {
+        height: 40px;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

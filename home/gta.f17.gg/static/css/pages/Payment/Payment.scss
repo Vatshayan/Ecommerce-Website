@@ -1,0 +1,16 @@
+.payment-zone {
+  height: 93vh;
+
+  .payment {
+    background-color: #ffffff;
+    overflow: visible;
+    background-size: cover;
+    padding-bottom: 3vh;
+    // background-position: center bottom 178px;
+    position: relative;
+    min-height: 100vh;
+    .content {
+      padding-top: 5rem;
+    }
+  }
+}

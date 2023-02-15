@@ -1,0 +1,107 @@
+.video-intro-wrap {
+    padding-bottom: 10rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  
+    .video-intro {
+      position: relative;
+      width: 65vw;
+      max-height: 80vh;
+  
+      .men-img {
+        position: absolute;
+        z-index: -1;
+        left: -355px;
+        top: -110px;
+        max-height: 100vh;
+        width: auto;
+        max-width: 100vw;
+      }
+  
+      .title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        text-transform: uppercase;
+  
+        color: #8fe4ff;
+        margin-bottom: 2rem;
+      }
+    }
+  
+    .videoWrapper {
+      @keyframes border {
+        0%, 100% {
+          -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+          clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+        }
+        50% {
+          -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+          clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+        }
+      }
+  
+      &::before, &::after {
+        mix-blend-mode: multiply;
+        filter: none;
+        z-index: -1;
+        content: '';
+        width: calc(100% + (50px * 2));
+        height: calc(100% + (50px * 2));
+        position: absolute;
+        display: block;
+        animation: border 10s ease-in-out infinite;
+        transform: translateX(-50px) translateY(-50px);
+        @media only screen and (max-width: 750px) {
+          width: calc(100% + (15px * 2));
+          height: calc(100% + (15px * 2));
+          transform: translateX(-15px) translateY(-15px);
+        }
+      }
+  
+      &::before {
+        background-color: #AA4465;
+      }
+  
+      &::after {
+        animation-delay: -5s;
+        background-color: #93e1d8;
+      }
+    }
+    
+    
+    .videoWrapper:hover:after {
+      //animation-delay: 0.1s;
+    }
+    
+    .videoWrapper:hover:before, .videoWrapper:hover:after {
+    
+      //animation-duration: 0.2s;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .video-intro-wrap {
+      padding-bottom: 90px;
+  
+      .video-intro {
+        width: 100vw;
+  
+        .men-img {
+          left: -135px;
+          top: -159px;
+        }
+  
+        .title {
+          font-size: 18px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  

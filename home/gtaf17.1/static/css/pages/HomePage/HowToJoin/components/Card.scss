@@ -1,0 +1,190 @@
+@use "src/styles/abstracts/mixins" as respond;
+
+.card {
+  max-width: 40vw;
+  width: 822px;
+  aspect-ratio: 16/9;
+  background-size: contain;
+  position: absolute;
+  margin-top: 4rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out 0.15s;
+  &:hover {
+    z-index: 7;
+    transform: scale(1.05);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  @include respond.respond("desktop") {
+    max-width: 55vw;
+  }
+
+  &.card1 {
+    background-image: url("../../../../assets/images/MaskCard.png");
+    z-index: 3;
+  }
+
+  &.card2 {
+    background-image: url("../../../../assets/images/MaskCard2.png");
+    right: 0;
+    top: 19vh;
+    &.selected {
+      z-index: 6;
+    }
+  }
+
+  p.step {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  p.step-title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  p.step-content {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fffcad;
+  }
+
+  .button-action {
+    width: fit-content;
+    height: 50px;
+    padding: 10px 1rem;
+    background: #ffb548;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .register {
+    background: rgba(207, 31, 54, 0.8);
+    height: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // .step-register {}
+
+    .action-register {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    p.step-content {
+      padding-left: 1rem;
+      flex: auto;
+      width: min-content;
+    }
+  }
+
+  .download-launcher {
+    background: rgba(60, 34, 191, 0.8);
+    height: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    .action-download {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    p.step-content {
+      padding-left: 1rem;
+      flex: auto;
+      width: min-content;
+    }
+  }
+}
+@include respond.respond("tablet") {
+  .card {
+    max-width: 75vw;
+    &.card1 {
+      top: 11vh;
+    }
+    &.card2 {
+      top: 36vh;
+    }
+  }
+}
+
+@include respond.respond("mobile") {
+  .card {
+    max-width: 75vw;
+    &.card1 {
+      top: 17vh;
+    }
+    &.card2 {
+      top: 36vh;
+    }
+    p.step {
+      font-size: 1rem;
+    }
+
+    p.step-title {
+      font-size: 1.3rem;
+    }
+
+    p.step-content {
+      font-size: 0.8rem;
+    }
+
+    .button-action {
+      height: 40px;
+      padding: 10px 1rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+    .register,
+    .download-launcher {
+      padding: 1rem 2rem;
+    }
+    .register {
+      .action-register {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      p.step-content {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0.5rem;
+      }
+    }
+    .download-launcher {
+      .action-download{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+      p.step-content {
+        width: 100%;
+        padding-right: 0;
+        padding-top: 0.5rem;
+      }
+      }
+
+    }
+  }
+}

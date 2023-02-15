@@ -1,0 +1,280 @@
+@use "src/styles/var.scss" as var;
+
+@keyframes loading {
+  0%,10%,100%
+  {
+  width: 0;
+  }
+  70%,90% {
+    width: 100%;
+  }
+}
+
+.gpt3__navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 6rem;
+  width: 100vw;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.gpt3__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gpt3__navbar-links_logo {
+  //margin-right: 2rem;
+
+  img {
+    width: 240px;
+    // height: 16.02px;
+  }
+}
+
+.gpt3__navbar-links_container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+
+  p {
+    color: var.$text-light;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+    background-image: linear-gradient(
+      to right,
+      #ffde2a,
+      #ffde2a 50%,
+      white 50%
+    );
+    background-size: 200% 100%;
+    background-position: 100%;
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-position: 0;
+    }
+  }
+
+  p {
+    --c: #fff; /* the color */
+    --b: .0em; /* border length*/
+    --d: 20px; /* the cube depth */
+
+    --_s: calc(var(--d) + var(--b));
+
+    color: var(--c);
+    //border: solid rgba(255, 222, 42, 0);
+    border: solid #ffde2a;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    transform: translate(calc(var(--d) / -1), var(--d));
+    clip-path: polygon(
+                    var(--d) 0%,
+                    var(--d) 0%,
+                    100% 0%,
+                    100% calc(100% - var(--d)),
+                    100% calc(100% - var(--d)),
+                    var(--d) calc(100% - var(--d))
+    );
+    transition: 0.5s;
+
+    &:hover {
+      transform: translate(0, 0);
+      clip-path: polygon(
+                      0% var(--d),
+                      var(--d) 0%,
+                      100% 0%,
+                      100% calc(100% - var(--d)),
+                      calc(100% - var(--d)) 100%,
+                      0% 100%
+      );
+    }
+  }
+
+  // Some thing like: :)) perfect
+  .effects {
+    position: relative;
+    -webkit-text-stroke: 0vw #fff; 
+
+    &::before {
+      content: attr(value);
+      position: absolute;
+      padding: 10px 0;
+      top: 0;
+      left: 0; 
+      width: 0;
+      height: 100%;
+      -webkit-text-fill-color: #01fe87;
+      -webkit-text-stroke: 0vw #383d52; 
+      border-right: 2px solid #01fe87;
+      white-space: nowrap;
+      overfLow: hidden; 
+      animation: loading 6s linear infinite;
+      @media screen and (max-width: 700px) {
+        border-right: 1px;
+      }
+    }
+  }
+}
+
+.gpt3__navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  p {
+    color: var.$text-light;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+}
+
+.gpt3__navbar-menu_container {
+    cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  margin-top: 1rem;
+}
+
+.gpt3__navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.gpt3__navbar-menu_container-links-sign {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .gpt3__navbar-links_container {
+    display: none;
+  }
+
+  .gpt3__navbar-menu {
+    display: flex;
+  }
+}
+
+.active {
+  color: red !important;
+}
+
+@media screen and (max-width: 700px) {
+  .gpt3__navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gpt3__navbar {
+    padding: 2rem;
+  }
+
+  .gpt3__navbar-sign {
+    display: none;
+  }
+
+  .gpt3__navbar-menu_container {
+    top: 20px;
+  }
+
+  .gpt3__navbar-menu_container-links-sign {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1501px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1405px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 27px;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 15px;
+    }
+  }
+}

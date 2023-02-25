@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('templates/meta')%>
+</head>
+
+<body>
+
+    <div class="mfp-bg login-popup mfp-ready"></div>
+    <div class="ajax-overlay"><i class="porto-loading-icon"></i></div>
+    <div class="mfp-wrap mfp-close-btn-in mfp-auto-cursor login-popup mfp-ready" tabindex="-1"
+        style="overflow: hidden auto;">
+        <div class="mfp-container mfp-ajax-holder mfp-s-ready">
+            <div class="mfp-content">
+                <div class="modal-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="title mb-2">Login</h2>
+
+                                <form method="POST">
+                                    <label for="login-email">Email address <span class="required">*</span></label>
+                                    <input type="email" name="email" class="form-input form-wide mb-2" id="login-email" required="">
+
+                                    <label for="login-password">Password <span class="required">*</span></label>
+                                    <input type="password" name="password" class="form-input form-wide mb-2" id="login-password"
+                                        required="">
+
+                                    <div class="form-footer">
+                                            <input type="hidden" name="TYPE" value="LO">
+                                        <button type="submit" class="btn btn-primary btn-md">LOGIN</button>
+
+                                        <div class="custom-control custom-checkbox form-footer-right">
+                                            <input type="checkbox" class="custom-control-input" id="lost-password">
+                                            <label class="custom-control-label form-footer-right"
+                                                for="lost-password">Remember Me</label>
+                                        </div>
+                                    </div><!-- End .form-footer -->
+                                    <a href="#" class="forget-password"> Forgot your password?</a>
+                                </form>
+                            </div><!-- End .col-md-6 -->
+
+                            <div class="col-md-6">
+                                <h2 class="title mb-2">Register</h2>
+
+                                <form method="POST">
+                                    <label for="register-email">Email address <span class="required">*</span></label>
+                                    <input type="email" name="email" class="form-input form-wide mb-2" id="register-email" required="">
+
+                                    <label for="register-password">Password <span class="required">*</span></label>
+                                    <input type="password" name="password" class="form-input form-wide mb-2" id="register-password"
+                                        required="">
+
+                                    <div class="form-footer">
+                                        <input type="hidden" name="TYPE" value="RE">
+                                        <button type="submit" class="btn btn-primary btn-md">Register</button>
+
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="newsletter-signup">
+                                            <label class="custom-control-label" for="newsletter-signup">Sing up our Newsletter</label>
+                                        </div><!-- End .custom-checkbox -->
+                                    </div><!-- End .form-footer -->
+                                </form>
+                            </div><!-- End .col-md-6 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+
+                    <div class="social-login-wrapper">
+                        <p>Access your account through your social networks.</p>
+
+                        <div class="btn-group">
+                            <a class="btn btn-social-login btn-md btn-gplus mb-1"><i
+                                    class="icon-gplus"></i><span>Google</span></a>
+                            <a class="btn btn-social-login btn-md btn-facebook mb-1"><i
+                                    class="icon-facebook"></i><span>Facebook</span></a>
+                            <a class="btn btn-social-login btn-md btn-twitter mb-1"><i
+                                    class="icon-twitter"></i><span>Twitter</span></a>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.min.js"></script>
+    <script>
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+        if(getUrlVars()["step"] === 'login'){
+            alert('Đăng ký thành công! Vui lòng click OK  để tiếp tục...')
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+    "name": "build_project_anonystick",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "beautiful": "prettier --single-quote --trailing-comma all --write 'backend-login/**/*.{js,json,ejs}'",
+        "start": "nodemon --inspect backend-login/app-log/app/server.js",
+        "watch": "",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "ejs": "^3.0.2",
+        "express": "^4.17.1",
+        "md5": "^2.3.0",
+        "mongoose": "^5.9.9",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "husky": "^8.0.3",
+        "lint-staged": "^13.1.2",
+        "prettier": "^2.8.4"
+    }
+}

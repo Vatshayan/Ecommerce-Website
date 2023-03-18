@@ -1,0 +1,20 @@
+#step-to-join {
+  position: relative;
+
+  .women-img {
+    position: absolute;
+    right: 0;
+    top: -5vh;
+    height: 110vh;
+  }
+}
+
+.how-to-join {
+  position: relative;
+  height: 100vh;
+  padding: 1rem 0;
+  display: flex;
+  @media only screen and (min-width: 992px) {
+    padding-bottom: 4rem;
+  }
+}

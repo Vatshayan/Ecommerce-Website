@@ -1,0 +1,144 @@
+@use "src/styles/abstracts/mixins" as respond;
+
+.how-to-start-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  transform: skewY(-2deg);
+  padding: 6rem 0;
+
+  @media only screen and (max-width: 970px) { 
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .css-1ekb41w {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    @media only screen and (max-width: 970px) { 
+      width: 100%;
+      margin-left: auto;
+      box-sizing: border-box;
+      margin-right: auto;
+      display: block;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  .how-to-start-header {
+    outline: 0;
+    list-style: none;
+    display: block;
+    color: #8fe4ff;
+
+    p {
+      text-transform: uppercase;
+    }
+  }
+
+  .text-1 {
+    font-size: 32px;
+    font-weight: 800;
+    outline: 0;
+    list-style: none;
+
+    p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+  }
+
+  .text-2 {
+    font-size: 100px;
+    font-weight: 300;
+  }
+
+  span {
+    font-weight: 800;
+    color: #7c5bf1;
+  }
+
+  .text-3 {
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .btn--link-to-event {
+    &:before {
+      content: "";
+      background: url("/assets/media/play-button-arrowhead.svg") no-repeat;
+      background-size: 100% 100%;
+      width: 29px;
+      height: 31px;
+      margin-right: 23px;
+      transition: all easy-in-out .23333333s;
+      -webkit-transition: all .23333333s ease-in-out;
+      -moz-transition: all .23333333s ease-in-out;
+    }
+    font: inherit;
+    min-width: 200px;
+    max-width: 353px;
+    width: 353px;
+    height: 116px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #ffec1c;
+    box-shadow: 10.58px 14.562px 21px 0 rgb(255 236 28 / 22%), 51.137px 70.384px 60px 0 rgb(255 236 28 / 22%);
+    z-index: 1;
+    cursor: pointer;
+
+    p {
+      font: inherit;
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: 800;
+      color: #2f344f;
+      text-align: left;
+      line-height: .9;
+    }
+    @include respond.respond("extra-large-desktop") {
+      min-width: 353px;
+    }
+    @include respond.respond("large-desktop") {
+      min-width: 353px;
+    }
+    @include respond.respond("desktop") {
+      min-width: 353px;
+    }
+    @include respond.respond("native-tablet") {
+      min-width: 300px;
+    }
+  }
+
+  @include respond.respond("small-mobile") {
+    .text-2 {
+      font-size: 80px;
+    }
+    .btn--link-to-event {
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+  
+  @include respond.respond("very-small-mobile") {
+    .text-2 {
+        font-size: 50px;
+      }
+    .btn--link-to-event {
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+}

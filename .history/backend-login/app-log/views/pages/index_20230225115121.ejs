@@ -1,0 +1,16 @@
+<!-- views/pages/index.ejs -->
+...
+<h2>Variable</h2>
+<p>
+    <%= tagline %>
+</p>
+<h2>Loop</h2>
+<ul>
+    <% drinks.forEach(function(drink) { %>
+        <li>
+            <%= drink.name %> -
+                <%= drink.drunkness %>
+        </li>
+        <% }); %>
+</ul>
+...

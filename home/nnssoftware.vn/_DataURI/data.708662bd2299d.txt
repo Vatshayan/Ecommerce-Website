@@ -1,0 +1,1 @@
+chrome-extension://aapbdbdomjkkjkaonfhkkikfgjllcleb/bubble_compiled.js

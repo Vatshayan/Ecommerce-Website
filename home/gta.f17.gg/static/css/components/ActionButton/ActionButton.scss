@@ -1,0 +1,81 @@
+@use "src/styles/abstracts/mixins" as respond;
+
+.action-button {
+  position: relative;
+  width: fit-content;
+  align-self: end;
+  justify-self: center;
+
+  margin: 0 auto;
+
+  transition: all 0.3s ease-out 0.15s;
+  &:hover {
+    z-index: 7;
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 400px;
+    cursor: pointer;
+  }
+
+  p {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    // font-family: 'Chakra Petch';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .blinking {
+    animation: blinkingText 1.2s infinite;
+  }
+
+  @keyframes blinkingText {
+    0% {
+      color: #fff;
+    }
+
+    49% {
+      color: #fff;
+    }
+
+    60% {
+      color: transparent;
+    }
+
+    99% {
+      color: transparent;
+    }
+
+    100% {
+      color: #fff;
+    }
+  }
+
+  @include respond.respond("small-mobile") {
+    img {
+      width: 300px;
+    }
+
+    .blinking {
+      font-size: medium;
+    }
+  }
+
+  @include respond.respond("very-small-mobile") {
+    img {
+      width: 200px;
+    }
+
+    .blinking {
+      font-size: small;
+    }
+  }
+}

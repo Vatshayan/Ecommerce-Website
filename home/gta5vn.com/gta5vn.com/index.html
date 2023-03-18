@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto;" class="translated-ltr"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+  <base href="https://gta5vn.com/">
+  <title>Grand Theft Auto V Roleplay - GTA V Roleplay - GTA5VN.Com - Đỉnh cao nhập vai</title>
+  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="GTA5VN - GTA V Roleplay nhập vai đỉnh cao duy nhất tại Việt Nam. Cùng sống trong một thế giới được xây dựng như đời sống thật cho phép các bạn trải nghiệm những gì mà ngoài đời bạn không thể làm.">
+  <meta name="keywords" content="gta5vn, gta roleplay, gta nhap vai, gtarp, gta5rp, gta5vn.com, game nhap vai doi song that, roleplay nhap vai, gta real life, gta v viet nam, gta 5 roleplay, gta viet nam, huong dan gta roleplay, cach choi gta roleplay, server gta roleplay">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="next-head-count" content="2">
+  <link rel="preload" href="/_next/static/css/39935064348515170559.css" as="style">
+  <link rel="stylesheet" href="/_next/static/css/39935064348515170559.css">
+  <link rel="preload" href="/_next/static/chunks/main-cb1a231f3c8eb19c8a77.js" as="script">
+  <link rel="preload" href="/_next/static/chunks/webpack-62d5646abf7b0807ebaa.js" as="script">
+  <link rel="preload" href="/_next/static/chunks/framework.0af185ce84f114f60bdc.js" as="script">
+  <link rel="preload" href="/_next/static/chunks/ba7d034ae4a7a12134d253d536b8d9e5a43f29cb.1027d52b5eac815f5437.js" as="script">
+  <link rel="preload" href="/_next/static/chunks/df8c366fd67d67d94136e329fea13aa2365929c1.07dc9480b0d1693eab38.js" as="script">
+  <link rel="preload" href="/_next/static/chunks/pages/_app-62fdae26593d6054863c.js" as="script">
+  <link rel="preload" href="/_next/static/chunks/d158b9b922b4fe3d5cf353f3a800299dd8facd61.a782484dd5522c7717aa.js" as="script">
+  <link rel="preload" href="/_next/static/chunks/69939a98c724eb2ca47f782e69ebc4b9396e86c6.3d81c642651b6a380491.js" as="script">
+  <link rel="preload" href="/_next/static/chunks/10d3b2bfcb5985567f30d75d881f532bd8c94bd9.ba5750509acd5d85b226.js" as="script">
+  <link rel="preload" href="/_next/static/chunks/pages/index-3f1237bcec46943987df.js" as="script">
+  <meta http-equiv="X-Translated-By" content="Google">
+  <meta http-equiv="X-Translated-To" content="en">
+  <script type="text/javascript" src="https://www.gstatic.com/_/translate_http/_/js/k=translate_http.tr.vi.DXi6u157EM0.O/d=1/rs=AN8SPfrLWpaAaOUJ5KasLaqbzTZ6qZax-A/m=ajaxproxy" data-sourceurl="https://gta5vn.com/"></script>
+  <meta name="robots" content="none">
+ <script async="" src="https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.cYEbrOmw59Q.L.W.O/d=0/rs=AN8SPfpU282joXDlbkUblMtWLWoZn4bb2g/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_US.byAF_Azt2kc.O/d=1/exm=el_conf/ed=1/rs=AN8SPfrXwfkT4TYv60C_6QbtwA1C5piIWw/m=el_main"></script><style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+ <body style="margin-top: 0px; transition: margin-top 0.2s ease 0s;"><iframe title="Google Translate navigation" frameborder="0" id="gt-nvframe" role="navigation" aria-label="Google Translate navigation" src="https://translate.google.com/websitetranslationui?parent=https%3A%2F%2Fgta5vn-com.translate.goog&amp;pfu=https%3A%2F%2Fgta5vn-com.translate.goog%2F%3F_x_tr_sl%3Dvi%26_x_tr_tl%3Den%26_x_tr_hl%3Den%26_x_tr_pto%3Dsc&amp;u=https%3A%2F%2Fgta5vn.com%2F&amp;sl=vi&amp;tl=en&amp;opu=https%3A%2F%2Ftranslate.google.com%2Fwebsite%3Fsl%3Dvi%26tl%3Den%26hl%3Den%26prev%3Dsearch%26u%3Dhttps%3A%2F%2Fgta5vn.com%2F%26anno%3D2&amp;client=search&amp;hl=en&amp;uip=true" style="border: none; border-radius: 50%; box-shadow: rgba(60, 64, 67, 0.15) 0px 4px 8px 3px, rgba(60, 64, 67, 0.3) 0px 1px 3px; height: 56px; left: auto; right: 16px; position: fixed; top: 56px; transition: top 0.5s ease 0s; width: 56px; z-index: 2147483646;"></iframe>
+  <script type="text/javascript" src="https://www.gstatic.com/_/translate_http/_/js/k=translate_http.tr.vi.DXi6u157EM0.O/d=1/exm=ajaxproxy/ed=1/rs=AN8SPfrLWpaAaOUJ5KasLaqbzTZ6qZax-A/m=navigationui" data-environment="prod" data-proxy-url="https://gta5vn-com.translate.goog" data-proxy-full-url="https://gta5vn-com.translate.goog/?_x_tr_sl=vi&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=sc" data-source-url="https://gta5vn.com/" data-source-language="vi" data-target-language="en" data-display-language="en" data-detected-source-language="" data-is-source-untranslated="false" data-source-untranslated-url="https://translate.google.com/website?sl=vi&amp;tl=en&amp;hl=en&amp;prev=search&amp;u=https://gta5vn.com/&amp;anno=2" data-use-in-place-translation="true" data-client="search"></script>
+          <div id="__next">
+            <div id="box_layer_wrap" class="scroll_fix_wrap fixed" style="display:none">
+                <div id="box_layer" style="width:740px">
+                    <div id="box_loader" style="margin-top:300px">
+                        <div class="pr pr_baw pr_medium" id="box_loader_pr">
+                            <div class="pr_bt"></div>
+                            <div class="pr_bt"></div>
+                            <div class="pr_bt"></div>
+                        </div>
+                        <div class="back"></div>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <div class="main__header">
+                    <div class="container-xl">
+                        <nav class="navbar__wrapper navbar navbar-expand-lg navbar-dark">
+                            <a href="/" class="nav__branch mt-5 navbar-brand">
+                                <img src="/images/logo.png" alt="logo-gta5-game-nhap-vai-dinh-cao" class="branch__img"/>
+                            </a>
+                            <div class="nav__main mt-5 navbar-nav" id="main-navbar">
+                                <a class="nav__link">Trang chủ</a>
+                                <a class="nav__link">Chơi ngay</a>
+                                <a class="nav__link">Giới thiệu</a>
+                                <a class="nav__link" target="_blank" href="https://bit.ly/gta5vn_dc">Discord</a>
+                            </div>
+                            <div class="nav__profile mt-5">
+                                <li class="profile__donate">
+                                    <a class="donate__wrapper" href="/#">
+                                        <img src="/images/icons/shop.png" alt="shop" class=""/>
+                                        <p class="mb-0 text-white text-bold text-uppercase ml-3">Nạp GEM</p>
+                                    </a>
+                                </li>
+                                <li class="profile__login ml-5">
+                                    <a class="login__wrapper">
+                                        <img src="/images/icons/login.png" class=""/>
+                                        <p class="mb-0 login__wrapper__content">Login</p>
+                                    </a>
+                                </li>
+                            </div>
+                            <button aria-controls="collapse-navbar" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="nav__collapse navbar-collapse collapse" id="collapse-navbar">
+                                <div class="collapse__nav navbar-nav">
+                                    <a class="nav__link">Chơi ngay</a>
+                                    <a class="nav__link">Giới thiệu</a>
+                                    <a class="nav__link" target="_blank" href="https://bit.ly/gta5vn_dc">Discord</a>
+                                    <a class="nav__link" target="_blank" href="/">Nạp tiền</a>
+                                    <p class="nav__link">Hồ sơ</p>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="container-md">
+                        <div class="banner">
+                            <div class="banner__content">
+                                <div class="content__header">
+                                    <h2>GTA5VN - ĐỈNH CAO NHẬP VAI</h2>
+                                </div>
+                                <div class="content__body">
+                                    <img src="/images/screens/casemain/home-headline.png" alt="home-headline" class=""/>
+                                </div>
+                                <div class="content__footer">
+                                    <div class="footer__btn">
+                                        <a role="button">
+                                            <span>Chơi ngay</span>
+                                            <img src="/images/icons/arrow-right.png" alt="arrow-right" class="ml-2"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner__img">
+                                <img src="/images/screens/casemain/gangsta.png" alt="gta5vn-game-nhap-vai-dinh-cao-gangsta" class=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__body" id="main-body">
+                    <div class="container-xl">
+                        <div class="play row">
+                            <div class="play__header mb-5 col-12">
+                                <h2 class="text-uppercase">chơi ngay với 3 bước</h2>
+                            </div>
+                            <div class="play__content col-12">
+                                <div class="row">
+                                    <div class="content__item mt-5 col-xl-4 col-md-6">
+                                        <div class="card card__first card">
+                                            <div class="p-0 card-body">
+                                                <div class="card__header">
+                                                    <p class="header__content mb-0 mr-2 text-bold text-white">Bước</p>
+                                                    <div class="header__icon">
+                                                        <p class="mb-0">1</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card__body mt-2">
+                                                    <h5 class="text-white mb-1">Tải game GTA 5</h5>
+                                                    <h5 class="text-white">Nếu bạn đã tải hoặc có game, vui lòng qua bước 2</h5>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="footer__link card-link" style="cursor:pointer">
+                                                        <img src="/images/icons/gta-small.png" alt="gta-small" class=""/>
+                                                        <p class="text-white m-0 ml-1 link__content">Tải game</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content__item mt-5 col-xl-4 col-md-6">
+                                        <div class="card card__second card">
+                                            <div class="p-0 card-body">
+                                                <div class="card__header">
+                                                    <p class="header__content mb-0 mr-2 text-bold text-white">Bước</p>
+                                                    <div class="header__icon">
+                                                        <p class="mb-0">2</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card__body mt-2">
+                                                    <h5 class="text-white mb-1">Tải Launcher GTA5VN</h5>
+                                                    <h5 class="text-white">Để có thể kết nối vào trò chơi</h5>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="footer__link card-link" style="cursor:pointer">
+                                                        <img src="/images/icons/rage-small.png" alt="rage-small" class=""/>
+                                                        <p class="text-white m-0 ml-1 link__content">Tải Launcher</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__box"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="div-off col-md-3"></div>
+                                    <div class="content__item mt-5 col-xl-4 col-md-6">
+                                        <div class="card card__third card">
+                                            <div class="p-0 card-body">
+                                                <div class="card__header">
+                                                    <p class="header__content mb-0 mr-2 text-bold text-white">Bước</p>
+                                                    <div class="header__icon">
+                                                        <p class="mb-0">3</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card__body mt-2">
+                                                    <h5 class="text-white mb-1">Hướng dẫn</h5>
+                                                    <h5 class="text-white">Gặp khó khăn khi cài đặt, nhận hỗ trợ ngay từ BQT.</h5>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="footer__link card-link" href="https://wiki.gta5vn.com/#/article/21?_k=vylga4" target="_blank">
+                                                        <img src="/images/icons/copy-small.png" alt="rage-small" class=""/>
+                                                        <p class="text-white m-0 ml-1 link__content">Hướng dẫn</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="div-off col-md-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__news">
+                    <div class="container-xl">
+                        <div class="news">
+                            <div class="news__header mb-5 col-12">
+                                <h2 class="text-uppercase">Tin tức mới</h2>
+                            </div>
+                            <div class="news__content">
+                                <div class="content__wrapper">
+                                    <div class="slick-slider slick-initialized" dir="ltr">
+                                        <div class="slick-list">
+                                            <div class="slick-track" style="width:133.33333333333334%;left:0%">
+                                                <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline:none;width:25%">
+                                                    <div>
+                                                        <div class="item__wrapper" tabindex="-1" style="width:100%;display:inline-block">
+                                                            <div class="content__item">
+                                                                <div class="card-wrapper mr-3 card">
+                                                                    <div class="card__header">
+                                                                        <img class="card-img-top header__img" src="/images/screens/latestArticles/a10.jpg"/>
+                                                                    </div>
+                                                                    <div class="card__body card-body">
+                                                                        <div class="item__button">Tin tức</div>
+                                                                        <div class="item__title">
+                                                                            <h5>HƯỚNG DẪN CÀI ĐẶT GAME</h5>
+                                                                        </div>
+                                                                        <div class="item__content">
+                                                                            <p>Gặp khó khăn trong khi cài đặt GTA5VN? Hãy ấn phía dưới để xem hướng dẫn cài đặt game và Launcher</p>
+                                                                        </div>
+                                                                        <div class="item__footer">
+                                                                            <a class="footer__link card-link">
+                                                                                <p class="mb-0 mr-0 link__content">chi tiết</p>
+                                                                                <img src="/images/icons/arrow-right.png" class="link__icon"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline:none;width:25%">
+                                                    <div>
+                                                        <div class="item__wrapper" tabindex="-1" style="width:100%;display:inline-block">
+                                                            <div class="content__item">
+                                                                <div class="card-wrapper mr-3 card">
+                                                                    <div class="card__header">
+                                                                        <img class="card-img-top header__img" src="/images/screens/latestArticles/a12.jpg"/>
+                                                                    </div>
+                                                                    <div class="card__body card-body">
+                                                                        <div class="item__button">Tin tức</div>
+                                                                        <div class="item__title">
+                                                                            <h5>CẬP NHẬT TRANG CHỦ MỚI</h5>
+                                                                        </div>
+                                                                        <div class="item__content">
+                                                                            <p>GTA5VN chính thức cập nhật hệ thống tài khoản mới, vui lòng update Launcher để có thể vào game ở phiên bản mới này</p>
+                                                                        </div>
+                                                                        <div class="item__footer">
+                                                                            <a class="footer__link card-link">
+                                                                                <p class="mb-0 mr-0 link__content">chi tiết</p>
+                                                                                <img src="/images/icons/arrow-right.png" class="link__icon"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline:none;width:25%">
+                                                    <div>
+                                                        <div class="item__wrapper" tabindex="-1" style="width:100%;display:inline-block">
+                                                            <div class="content__item">
+                                                                <div class="card-wrapper mr-3 card">
+                                                                    <div class="card__header">
+                                                                        <img class="card-img-top header__img" src="/images/screens/latestArticles/a14.png"/>
+                                                                    </div>
+                                                                    <div class="card__body card-body">
+                                                                        <div class="item__button">Tin tức</div>
+                                                                        <div class="item__title">
+                                                                            <h5>CẬP NHẬT THÔNG TIN TÀI KHOẢN</h5>
+                                                                        </div>
+                                                                        <div class="item__content">
+                                                                            <p>Nếu bạn không thể đăng nhập tại Launcher, vui lòng đăng nhập trên trang chủ và cập nhật thông tin tài khoản của bạn</p>
+                                                                        </div>
+                                                                        <div class="item__footer">
+                                                                            <a class="footer__link card-link">
+                                                                                <p class="mb-0 mr-0 link__content">chi tiết</p>
+                                                                                <img src="/images/icons/arrow-right.png" class="link__icon"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline:none;width:25%">
+                                                    <div>
+                                                        <div class="item__wrapper" tabindex="-1" style="width:100%;display:inline-block">
+                                                            <div class="content__item">
+                                                                <div class="card-wrapper mr-3 card">
+                                                                    <div class="card__header">
+                                                                        <img class="card-img-top header__img" src="/images/screens/latestArticles/a13.jpg"/>
+                                                                    </div>
+                                                                    <div class="card__body card-body">
+                                                                        <div class="item__button">news</div>
+                                                                        <div class="item__title">
+                                                                            <h5>☀️ BIG SUMMER UPDATES</h5>
+                                                                        </div>
+                                                                        <div class="item__content">
+                                                                            <p>Let &#x27;s welcome summer together and with impressive updates! ☀️</p>
+                                                                        </div>
+                                                                        <div class="item__footer">
+                                                                            <a class="footer__link card-link">
+                                                                                <p class="mb-0 link__content">chi tiết</p>
+                                                                                <img src="/images/icons/arrow-right.png" class="link__icon"/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul style="display:block" class="slick-dots">
+                                            <li class="slick-active">
+                                                <button>1</button>
+                                            </li>
+                                            <li class="">
+                                                <button>2</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content__footer__car"></div>
+                                <div class="dog__head"></div>
+                                <div class="content__footer__dog">
+                                    <div class="dog__head"></div>
+                                    <div class="dog__body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__join">
+                    <div class="container">
+                        <div class="join row">
+                            <div class="join__header mb-5 col-12">
+                                <h2 class="text-uppercase">tham gia với chúng tôi</h2>
+                            </div>
+                            <div class="join__content col-12">
+                                <div class="content__wrapper row">
+                                    <div class="content__item mt-5 col-lg-4 col-sm-6">
+                                        <div class="card-wrapper first card">
+                                            <div class="card__header card-header">
+                                                <div class="item__header">
+                                                    <div class="header__circle">
+                                                        <canvas width="150" height="150"></canvas>
+                                                        <div class="circle__status">
+                                                            <div class="circle__status__title">
+                                                                <p class="mb-0">nhóm</p>
+                                                            </div>
+                                                            <div class="circle__status__desc">
+                                                                <p class="mb-0">facebook</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body card-body">
+                                                <h2>nhóm gta5vn</h2>
+                                            </div>
+                                            <div class="card__footer card-footer">
+                                                <a class="footer__link link__first card-link" target="blank" href="https://www.facebook.com/groups/GTAVRoleplayInVietnam">
+                                                    <p class="mb-0 link__content">tham gia</p>
+                                                    <img src="/images/icons/arrow-right.png" class="link__icon"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content__item mt-5 col-lg-4 col-sm-6">
+                                        <div class="card-wrapper second card">
+                                            <div class="card__header card-header">
+                                                <div class="item__header">
+                                                    <div class="header__circle">
+                                                        <canvas width="150" height="150"></canvas>
+                                                        <div class="circle__status">
+                                                            <div class="circle__status__title">
+                                                                <p class="mb-0">Nhóm</p>
+                                                            </div>
+                                                            <div class="circle__status__desc">
+                                                                <p class="mb-0">fanpage</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body card-body">
+                                                <h2>fanpage gta5vn</h2>
+                                            </div>
+                                            <div class="card__footer card-footer">
+                                                <a class="footer__link link__second card-link" href="https://www.facebook.com/gta5vn.roleplay" target="blank">
+                                                    <p class="mb-0 link__content">tham gia</p>
+                                                    <img src="/images/icons/arrow-right.png" class="link__icon"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content__item mt-5 col-lg-4 col-sm-12">
+                                        <div class="card-wrapper third card">
+                                            <div class="card__header card-header">
+                                                <div class="item__header">
+                                                    <div class="header__circle">
+                                                        <canvas width="150" height="150"></canvas>
+                                                        <div class="circle__status">
+                                                            <div class="circle__status__title">
+                                                                <p class="mb-0">kênh</p>
+                                                            </div>
+                                                            <div class="circle__status__desc">
+                                                                <p class="mb-0">discord</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body card-body">
+                                                <h2>máy chủ discord</h2>
+                                            </div>
+                                            <div class="card__footer card-footer">
+                                                <a class="footer__link link__third card-link" href="https://discord.com/invite/3ycAb85" target="blank">
+                                                    <p class="mb-0 link__content">tham gia</p>
+                                                    <img src="/images/icons/arrow-right.png" class="link__icon"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__footer">
+                    <div class="container">
+                        <div class="footer row">
+                            <div class="footer__first mb-5 col-lg-4 col-md-4">
+                                <img src="/images/logo_hd.png" alt="logo_hd" class="first__logo"/>
+                                <a href="#" role="button" class="first__button">
+                                    <img src="/images/icons/shop-balance.png" class="button__icon"/>
+                                    <p class="mb-0">Nạp GEM</p>
+                                </a>
+                                <img src="/images/screens/footer/characters.png" alt="characters" class="first__img"/>
+                            </div>
+                            <div class="footer__second mb-5 col-lg-3 col-md-4">
+                                <nav class="second__nav">
+                                    <ul class="nav__main">
+                                        <li>
+                                            <a>Chơi</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://bit.ly/gta5vn_dc" target="_blank">Discord</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://forum.gta5vn.com/forums/tin-tuc-va-thong-tin.4/" target="_blank">Tin tức</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="footer__third mb-5 col-lg-5 col-md-4">
+                                <div class="mt-4 third__content">
+                                    <p class="mb-0">GTA5VN là một phiên bản GTA Online chơi theo hướng Roleplay. Bạn sẽ vào vai một công nhân, thợ sửa ống nước, taxi, tài xế, vv... Thậm chí bạn có thể trở thành một băng tội phạm khét tiếng, một sĩ quan gương mẫu bảo vệ thành phố hay là một bác sĩ đại tài cứu chữa người khác. Bạn có thể hóa thân vào bất cứ ai vào bất cứ điều gì bạn muốn và sống trong một thành phố được mô phỏng như ngoài đời với những người khác như bạn tại GTA5VN.</p>
+                                </div>
+                                <div class="third__img">
+                                    <img src="/images/screens/footer/veh.png" alt="veh" class=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__end">
+                    <div class="container">
+                        <div class="end row">
+                            <div class="end__item end__first col-lg-4 col-sm-4">
+                                <a href="https://forum.gta5vn.com/forums/quy-tac-may-chu.34/" target="_blank">Quy tắc chung GTA5VN</a>
+                            </div>
+                            <div class="end__item end__second col-lg-4 col-sm-4">
+                                <a href="https://forum.gta5vn.com/categories/quy-tac-to-chuc-chinh-phu.40/" target="_blank">Quy tắc cá nhân - tổ chức</a>
+                            </div>
+                            <div class="end__item end__second col-lg-4 col-sm-4">
+                                <a href="https://forum.gta5vn.com/forums/quy-tac-cho-cac-to-chuc-toi-pham.36/" target="_blank">Quy tắc Crew - Băng nhóm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll__wrapper" id="scroll-button">
+                    <div class="scroll__wrapper__main">
+                        <div class="main__arrow"></div>
+                        <p class="mb-0 text-white text-uppercase">up</p>
+                    </div>
+                </div>
+            </main>
+            <div>
+                <div class="fb-customerchat" page_id="2290087264445167"></div>
+            </div>
+        </div>
+        <script id="__NEXT_DATA__" type="application/json">
+            {"props":{"pageProps":{}},"page":"/","query":{},"buildId":"Ew30_JRD3aR_EB83HP95-","nextExport":true,"autoExport":true,"isFallback":false}
+        </script>
+        <script nomodule="" src="/_next/static/chunks/polyfills-5599feea8be8de625c95.js"></script>
+        <script src="/_next/static/chunks/main-cb1a231f3c8eb19c8a77.js" async=""></script>
+        <script src="/_next/static/chunks/webpack-62d5646abf7b0807ebaa.js" async=""></script>
+        <script src="/_next/static/chunks/framework.0af185ce84f114f60bdc.js" async=""></script>
+        <script src="/_next/static/chunks/ba7d034ae4a7a12134d253d536b8d9e5a43f29cb.1027d52b5eac815f5437.js" async=""></script>
+        <script src="/_next/static/chunks/df8c366fd67d67d94136e329fea13aa2365929c1.07dc9480b0d1693eab38.js" async=""></script>
+        <script src="/_next/static/chunks/pages/_app-62fdae26593d6054863c.js" async=""></script>
+        <script src="/_next/static/chunks/d158b9b922b4fe3d5cf353f3a800299dd8facd61.a782484dd5522c7717aa.js" async=""></script>
+        <script src="/_next/static/chunks/69939a98c724eb2ca47f782e69ebc4b9396e86c6.3d81c642651b6a380491.js" async=""></script>
+        <script src="/_next/static/chunks/10d3b2bfcb5985567f30d75d881f532bd8c94bd9.ba5750509acd5d85b226.js" async=""></script>
+        <script src="/_next/static/chunks/pages/index-3f1237bcec46943987df.js" async=""></script>
+        <script src="/_next/static/Ew30_JRD3aR_EB83HP95-/_buildManifest.js" async=""></script>
+        <script src="/_next/static/Ew30_JRD3aR_EB83HP95-/_ssgManifest.js" async=""></script>
+  <script>function gtElInit() {var lib = new google.translate.TranslateService();lib.translatePage('vi', 'en', function () {});}</script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=gtElInit&amp;hl=en&amp;client=wt_search" type="text/javascript"></script><div id="goog-gt-" class="skiptranslate VIpgJd-yAWNEb-L7lbkb" dir="ltr"><div style="padding: 8px;"><div><div class="VIpgJd-yAWNEb-l4eHX"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div style="padding: 8px; float: left; width: 100%;"><h1 class="VIpgJd-yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge">Original text</h1></div><div style="padding: 8px;"><div class="VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class="VIpgJd-yAWNEb-cGMI2b" style="padding: 8px;"><div class="VIpgJd-yAWNEb-Z0Arqf-PLDbbf"><span class="VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Contribute a better translation</span></div><div class="VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class="VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style="display: none;"></div></div>
+ 
+<div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><script>
+		function returnCommentSymbol(language = "javascript") {
+			const languageObject = {
+				bat: "@REM",
+				c: "//",
+				csharp: "//",
+				cpp: "//",
+				closure: ";;",
+				coffeescript: "#",
+				dockercompose: "#",
+				css: "/*DELIMITER*/",
+				"cuda-cpp": "//",
+				dart: "//",
+				diff: "#",
+				dockerfile: "#",
+				fsharp: "//",
+				"git-commit": "//",
+				"git-rebase": "#",
+				go: "//",
+				groovy: "//",
+				handlebars: "{{!--DELIMITER--}}",
+				hlsl: "//",
+				html: "<!--DELIMITER-->",
+				ignore: "#",
+				ini: ";",
+				java: "//",
+				javascript: "//",
+				javascriptreact: "//",
+				json: "//",
+				jsonc: "//",
+				julia: "#",
+				latex: "%",
+				less: "//",
+				lua: "--",
+				makefile: "#",
+				markdown: "<!--DELIMITER-->",
+				"objective-c": "//",
+				"objective-cpp": "//",
+				perl: "#",
+				perl6: "#",
+				php: "<!--DELIMITER-->",
+				powershell: "#",
+				properties: ";",
+				jade: "//-",
+				python: "#",
+				r: "#",
+				razor: "<!--DELIMITER-->",
+				restructuredtext: "..",
+				ruby: "#",
+				rust: "//",
+				scss: "//",
+				shaderlab: "//",
+				shellscript: "#",
+				sql: "--",
+				svg: "<!--DELIMITER-->",
+				swift: "//",
+				tex: "%",
+				typescript: "//",
+				typescriptreact: "//",
+				vb: "'",
+				xml: "<!--DELIMITER-->",
+				xsl: "<!--DELIMITER-->",
+				yaml: "#"
+			}
+			return languageObject[language].split("DELIMITER")
+		}
+		var savedChPos = 0
+		var returnedSuggestion = ''
+		let editor, doc, cursor, line, pos
+		pos = {line: 0, ch: 0}
+		var suggestionsStatus = false
+		var docLang = "python"
+		var suggestionDisplayed = false
+		var isReturningSuggestion = false
+		document.addEventListener("keydown", (event) => {
+		setTimeout(()=>{
+			editor = event.target.closest('.CodeMirror');
+			if (editor){
+				const codeEditor = editor.CodeMirror
+				if(!editor.classList.contains("added-tab-function")){
+					editor.classList.add("added-tab-function")
+					codeEditor.removeKeyMap("Tab")
+					codeEditor.setOption("extraKeys", {Tab: (cm)=>{
+
+						if(returnedSuggestion){
+							acceptTab(returnedSuggestion)
+						}
+						else{
+							cm.execCommand("defaultTab")
+						}
+					}})
+				}
+				doc = editor.CodeMirror.getDoc()
+				cursor = doc.getCursor()
+				line = doc.getLine(cursor.line)
+				pos = {line: cursor.line, ch: line.length}
+
+				if(cursor.ch > 0){
+					savedChPos = cursor.ch
+				}
+
+				const fileLang = doc.getMode().name
+				docLang = fileLang
+				const commentSymbol = returnCommentSymbol(fileLang)
+				if (event.key == "?"){
+					var lastLine = line
+					lastLine = lastLine.slice(0, savedChPos - 1)
+
+					if(lastLine.trim().startsWith(commentSymbol[0])){
+						lastLine += " "+fileLang
+						lastLine = lastLine.split(commentSymbol[0])[1]
+						window.postMessage({source: 'getQuery', payload: { data: lastLine } } )
+						isReturningSuggestion = true
+						displayGrey("\nBlackbox loading...")
+					}
+				}else if(event.key === "Enter" && suggestionsStatus && !isReturningSuggestion){
+					var query = doc.getRange({ line: Math.max(0,cursor.line-10), ch: 0 }, { line: cursor.line, ch: line.length })
+					window.postMessage({source: 'getSuggestion', payload: { data: query, language: docLang } } )
+					displayGrey("Blackbox loading...")
+				}else if(event.key === "ArrowRight" && returnedSuggestion){
+					acceptTab(returnedSuggestion)
+				}else if(event.key === "Enter" && isReturningSuggestion){
+					displayGrey("\nBlackbox loading...")
+				}else if(event.key === "Escape"){
+					displayGrey("")
+				}
+			}
+		}, 0)
+		})
+
+		function acceptTab(text){
+		if (suggestionDisplayed){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		}
+		function acceptSuggestion(text){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		function displayGrey(text){
+			if(!text){
+				document.querySelector(".blackbox-suggestion").remove()
+				return
+			}
+			var el = document.querySelector(".blackbox-suggestion")
+			if(!el){
+				el = document.createElement('span')
+				el.classList.add("blackbox-suggestion")
+				el.style = 'color:grey'
+				el.innerText = text
+			}
+			else{
+				el.innerText = text
+			}
+			
+			var lineIndex = pos.line;
+			editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(el)
+		}
+		function updateSuggestionStatus(s){
+			suggestionDisplayed = s
+			window.postMessage({source: 'updateSuggestionStatus', status: suggestionDisplayed, suggestion: returnedSuggestion})
+		}
+		window.addEventListener('message', (event)=>{
+		if (event.source !== window ) return
+		if (event.data.source == 'return'){
+			isReturningSuggestion = false
+			const formattedCode = formatCode(event.data.payload.data)
+			returnedSuggestion = formattedCode
+			displayGrey(formattedCode)
+			updateSuggestionStatus(true)
+		}
+		if(event.data.source == 'suggestReturn'){
+			returnedSuggestion = event.data.payload.data
+			displayGrey(event.data.payload.data)
+			updateSuggestionStatus(true)
+		}
+		if(event.data.source == 'suggestionsStatus'){
+			suggestionsStatus = event.data.payload.enabled
+		}
+		if(event.data.source == 'acceptSuggestion'){
+			
+			acceptSuggestion(event.data.suggestion)
+		}
+		})
+		document.addEventListener("keyup", function(){
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		})
+		function formatCode(data) {
+			if (Array.isArray(data)) {
+				var finalCode = ""
+				var pairs = []
+		
+				const commentSymbol = returnCommentSymbol(docLang)
+				data.forEach((codeArr, idx) => {
+					const code = codeArr[0]
+					var desc = codeArr[1]
+					const descArr = desc.split("\n")
+					var finalDesc = ""
+					descArr.forEach((descLine, idx) => {
+						const whiteSpace = descLine.search(/\S/)
+						if (commentSymbol.length < 2 || idx === 0) {
+							finalDesc += insert(descLine, whiteSpace, commentSymbol[0])
+						}
+						if (commentSymbol.length > 1 && idx === descArr.length - 1) {
+							finalDesc = finalDesc + commentSymbol[1] + "\n"
+						}
+					})
+		
+					finalCode += finalDesc + "\n\n" + code
+					pairs.push(finalCode)
+				})
+				return "\n"+pairs.join("\n")
+			}
+		
+			return "\n"+data
+		}
+		
+		function insert(str, index, value) {
+			return str.substr(0, index) + value + str.substr(index)
+		}
+	</script></body></html>

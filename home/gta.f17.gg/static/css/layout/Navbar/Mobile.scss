@@ -1,0 +1,98 @@
+@use "src/styles/var.scss" as var;
+
+@mixin opacity($opacity){
+    -webkit-opacity: 	$opacity;
+    -moz-opacity: 		$opacity;
+    opacity: 		$opacity;
+}
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius:    $radius;
+    border-radius:         $radius;
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
+}
+
+@mixin transition($duration){
+     -webkit-transition: all $duration ease;
+     -moz-transition: all $duration ease;
+     -o-transition: all $duration ease;
+     transition: all $duration ease;
+}
+
+.gpt3__navbar-menu {
+  &.toggled{
+    width: 50%;
+    .btn {
+      width: 100%;
+      text-align: end;
+    }
+  }
+}
+
+.mobile-nav{
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    @include opacity(0);
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+    @include transition(0.5s);
+    &.toggled{
+        display: block;
+        z-index: 10;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        @include opacity(1);
+        @include transition(0.5s);
+    }
+    .ul{
+        padding: 2em 0 0 0;
+        a{
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          ::after{
+            content:'';
+            display:block;
+            margin-top:5px;
+            margin-left:15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.348);
+          }
+
+          p {
+            font-size: large;
+            color: var.$text-light;
+            padding: 1em 0;
+            font-weight: 300;
+            display: block;
+            @include transition(0.5s);
+            &:last-child{
+              border: none;
+            }
+            &:hover{
+                @include opacity(0.45);
+                @include transition(0.5s);
+                padding: 1em;
+            }
+          }
+        }
+    }
+}
+
+.container{
+    position: relative;
+    @include transition(0.5s);
+    &.toggled{
+        -webkit-filter: blur(8px);
+        -moz-filter: blur(8px);
+        -o-filter: blur(8px);
+        -ms-filter: blur(8px);
+        filter: blur(8px);
+        @include transition(0.5s);
+    }   
+}

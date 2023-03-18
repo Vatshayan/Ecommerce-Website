@@ -1,0 +1,104 @@
+@use "src/styles/abstracts/mixins" as respond;
+
+.hero-banner {
+  background-color: #ffffff;
+  overflow: visible;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/assets/images/BannerHero.png");
+  .text-banner {
+    display: none;
+  }
+  @include respond.respond("tablet") {
+    background-image: url("/assets/images/herobg.png");
+    background-position: 70% 75%;
+    .text-banner {
+      display: block;
+      width: 100vw;
+      padding-top: 35vh;
+    }
+  }
+
+  // .hero-banner-title {
+  //   // font-family: "Allerta Stencil";
+  //   padding-top: 10rem;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 150px;
+  //   line-height: 192px;
+  //   text-align: center;
+
+  //   color: #ffffff;
+
+  //   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.8);
+  // }
+}
+
+.action-scope {
+  position: absolute;
+  bottom: 110px;
+  right: 53%;
+}
+
+@include respond.respond("mobile") {
+  .action-scope {
+    bottom: 190px;
+    right: 10%;
+  }
+}
+
+@include respond.respond("native-tablet") {
+  .action-scope {
+    bottom: 180px;
+    right: 25%;
+  }
+}
+
+#scroll-down-animation {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.mouse {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  height: 100px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.move {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0, 40px) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 80px) rotate(45deg);
+    opacity: 0;
+  }
+}

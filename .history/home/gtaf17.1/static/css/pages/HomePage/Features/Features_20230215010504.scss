@@ -1,0 +1,63 @@
+.wrap-feature {
+    text-align: center;
+    padding: 2rem 0;
+  
+    .divider {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+  
+      .item {
+        height: 6px;
+        width: 100px;
+      }
+  
+      .pink {
+        background: #ff5cb7;
+      }
+  
+      .cyan {
+        background: #00d2f0;
+      }
+  
+      .blue {
+        background: #3c22bf;
+      }
+    }
+  
+    .react-3d-carousel {
+      height: 42vw !important;
+      max-height: 500px;
+  
+      .slider-container {
+        width: 100%;
+        margin: -0px auto 0px -50%;
+        overflow: hidden;
+        height: 42vw;
+      }
+    }
+    .react-3d-carousel .slider-container .slider-left > div,
+    .react-3d-carousel .slider-container .slider-right > div {
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .react-3d-carousel .slider-container .slider-right > div > i {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      background: url("/assets/images/right-arrow.png") center;
+      background-size: contain;
+    }
+  
+    .react-3d-carousel .slider-container .slider-left > div > i {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      background: url("/assets/images/left-arrow.png") center;
+      background-size: contain;
+    }
+  }
+  

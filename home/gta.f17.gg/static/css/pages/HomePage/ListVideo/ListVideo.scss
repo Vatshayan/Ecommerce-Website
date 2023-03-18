@@ -1,0 +1,58 @@
+@use "src/styles/abstracts/mixins" as respond;
+
+.list-video {
+  background-color: #8574d7;
+  // height: 100vh;
+  position: relative;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  @include respond.respond("mobile") {
+    padding-bottom: 0rem;
+  }
+  .group-tab {
+    position: absolute;
+    top: -42.5px;
+    width: 100%;
+
+    button {
+      z-index: 7;
+      border-radius: 10px;
+
+      @include respond.respond("very-small-mobile") {
+        border-radius: 10px;
+        padding: 15.5px 6px;
+        font-size: 8px;
+      }
+
+      @include respond.respond("small-mobile") {
+        border-radius: 10px;
+        padding: 14.5px 6px;
+        font-size: 50%;
+      }
+
+      @include respond.respond("large-mobile") {
+        border-radius: 10px;
+        padding: 12px;
+        font-size: 75%;
+      }
+
+      @media only screen and (max-width: 393px) {
+        border-radius: 10px;
+        padding: 18px 6px;
+        font-size: 5px;
+      }
+    }
+
+    button:not(:last-of-type) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    button:not(:first-of-type) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}

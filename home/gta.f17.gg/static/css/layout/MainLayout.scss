@@ -1,0 +1,25 @@
+@use "../styles/var.scss" as var;
+
+#back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: var.$primary-color;
+  transform: translateY(0%);
+  transition: ease-out 200ms;
+  transition-property: transform, background-color;
+  .icon-back-to-top {
+    padding-top: 5px;
+    display: flex;
+    margin: auto;
+  }
+}
+
+#back-to-top:hover {
+  transform: translateY(-22%);
+}

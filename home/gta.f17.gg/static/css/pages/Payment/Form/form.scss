@@ -1,0 +1,51 @@
+@import "../../../styles/abstracts/index.scss";
+
+.payment-form {
+  min-height: 80vh;
+  margin-top: 3rem;
+
+  &__discount-check-user {
+    margin-top: 1rem;
+    img {
+      height: 30px;
+      width: 15px;
+      @include respond(extra-large-desktop) {
+        width: 40px;
+        height: 40px;
+      }
+      @include respond(large-desktop) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    display: flex;
+    align-items: center;
+  }
+
+  &__discount-icon {
+    color: rgb(0, 153, 255);
+    margin-right: 12px;
+    margin-left: 10px;
+  }
+  &__discount-citizenid{
+    width: 420px;
+    height: 40px;
+  }
+  &__discount-btlchecking-user{
+    width: 100px;
+    height: 40px;
+    // background-color:rgb(255, 187, 0) ;
+    color: antiquewhite;
+    border-radius: 0.5em;
+  }
+  &__player-name {
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+
+  .modal {
+    &__modal-title {
+      
+    }
+  }
+}

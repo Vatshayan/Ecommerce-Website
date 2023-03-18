@@ -1,0 +1,1 @@
+chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/content_element_picker.bundle.js

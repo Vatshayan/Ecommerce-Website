@@ -1,0 +1,269 @@
+@media(min-width: 576px) {
+    .container {
+        max-width: 865px
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 1130px
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1500px
+    }
+}
+
+@media(min-width: 1920px) {
+    header {
+        background-size: 100% auto
+    }
+}
+
+@media(max-width: 1400px) {
+    header .topline .topline-wrap .header-menu li {
+        margin-right: 30px
+    }
+}
+
+@media(max-width: 1350px) {
+    main:before {
+        background-position: center
+    }
+    footer:before {
+        background-position: center
+    }
+}
+
+@media(max-width: 1100px) {
+    .topline-wrap {
+        flex-direction: column;
+        align-items: center
+    }
+    header .girl-header {
+        display: none
+    }
+    header .info-server {
+        top: 0;
+        right: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px
+    }
+    main .game-servers .header-text {
+        flex-direction: column;
+        align-items: center
+    }
+    main .game-servers .header-text p {
+        text-align: center
+    }
+    main .game-servers .header-text p.online {
+        margin-top: 30px
+    }
+    header .topline .topline-wrap .header-menu li:before {
+        display: none
+    }
+    header {
+        height: 928px
+    }
+}
+
+@media(max-width: 930px) {
+    header .info-server {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+    }
+    header .info-server p {
+        font-size: 70px
+    }
+    header .info-server p.small {
+        font-size: 23px
+    }
+    header .info-server .quality-server div {
+        font-size: 40px;
+        margin-right: 20px
+    }
+    header .info-server .buttons-info-server .main-button.youtube {
+        font-size: 17px
+    }
+    .main-button span {
+        font-size: 10px
+    }
+    header .info-server .quality-server div span {
+        font-size: 15px
+    }
+    .main-button {
+        font-size: 17px;
+        padding: 15px
+    }
+    header {
+        height: 800px
+    }
+    footer .social-links .link {
+        width: 24vw;
+        height: 24vw;
+        margin-right: 0
+    }
+    footer .social-links .link p {
+        font-size: 3vw;
+        margin-top: 8.212vw
+    }
+    footer .social-links .link .people {
+        margin-top: 1vw
+    }
+    footer .social-links .link .side-box {
+        height: 6vw;
+        display: flex;
+        flex-direction: column
+    }
+    footer .social-links .link .people li {
+        width: 2.5vw;
+        height: 2vw;
+        margin-right: 0
+    }
+    footer .social-links .link .count {
+        font-size: 2.5vw;
+        margin-bottom: .3vw
+    }
+    .main-button.copy {
+        display: none
+    }
+    main .game-servers .server .online {
+        font-size: 20px;
+        top: 10.058vw
+    }
+    main .game-servers .server.one .online:before {
+        content: "";
+        width: 2.6vw;
+        height: 3vw;
+        margin-top: .3vw
+    }
+    main .game-servers .server.two .online:before {
+        content: "";
+        width: 2.6vw;
+        height: 3vw;
+        margin-top: .3vw
+    }
+    main .game-servers .server .online span:before {
+        width: 2.455vw;
+        height: 2.818vw
+    }
+}
+
+@media(max-width: 850px) {
+    .girl-header {
+        width: 340px!important;
+        background-size: 100% auto!important
+    }
+    main .game-servers .server .online {
+        font-size: 15px;
+        top: 10.058vw
+    }
+    .header-menu {
+        flex-wrap: wrap;
+        margin-top: 20px
+    }
+    .header-menu li {
+        width: 50%;
+        margin-right: 0
+    }
+    .header-menu li a {
+        display: block;
+        padding: 5px
+    }
+    .container {
+        max-width: 720px
+    }
+    header .topline .topline-wrap .header-menu li {
+        margin-right: 0;
+        display: flex;
+        justify-content: center
+    }
+    header {
+        height: 950px
+    }
+}
+
+@media(max-width: 690px) {
+    main .game-servers .server .online {
+        font-size: 10px;
+        top: 10vw
+    }
+    main .game-servers .header-text p.online {
+        font-size: 6vw
+    }
+    main .game-servers .header-text p.online span {
+        font-size: 2vw;
+        line-height: 1
+    }
+    footer .copyright {
+        position: relative;
+        width: unset;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        bottom: 0
+    }
+    footer .copyright p.protection {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 3vw
+    }
+}
+
+@media(max-width: 500px) {
+    .modal-window .modal-box {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
+
+@media(max-width: 437px) {
+    header {
+        height: 1020px
+    }
+}
+
+@media(max-width: 410px) {
+    main .game-servers .server .online {
+        font-size: 8px;
+        top: 10vw
+    }
+    header {
+        height: 1070px
+    }
+}
+
+@media(max-width: 314px) {
+    header {
+        height: 987px
+    }
+}
+
+@media(min-width: 2200px) {
+    header .info-server {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%
+    }
+}
+
+@media(max-width: 400px) {
+    header .info-server .quality-server {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}

@@ -1,0 +1,106 @@
+@use "src/styles/abstracts/mixins" as mixin;
+
+.inner-border {
+  border: 0.6rem solid #fff;
+  box-shadow: inset 0px 0px 0px 1px #6d59cf;
+  box-sizing: border-box;
+}
+
+.tab-feature {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  position: relative;
+  cursor: pointer;
+  .content {
+    padding: 1rem;
+    padding-right: 4rem;
+  }
+  .label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #3c22bf;
+    padding-bottom: 1rem;
+  }
+
+  .tab-content {
+    padding-top: 0;
+    color: #000;
+    padding-bottom: 0.5rem;
+    // .tab-content {
+    // }
+  }
+
+  .tab-thumbnail {
+    position: absolute;
+    right: -30%;
+
+    &.event {
+      transform: scale(0.8);
+    }
+    &.store {
+      transform: scale(0.7);
+      bottom: -60px;
+      right: -7rem;
+    }
+    &.sale {
+      transform: scale(0.7);
+      right: -2rem;
+    }
+    &.hot {
+      transform: scale(0.7);
+      right: -5rem;
+      bottom: -75px;
+    }
+    &.activity {
+      transform: scale(0.7);
+      right: -5rem;
+      bottom: -100px;
+    }
+  }
+}
+
+.tab-feature.selected {
+  background-color: #8574d7;
+
+  .label {
+    color: #fffcad;
+  }
+
+  .tab-content {
+    color: #fff;
+  }
+}
+@include mixin.respond("mobile") {
+  .tab-feature {
+    .label {
+      font-size: 1rem;
+    }
+    .tab-thumbnail {
+      &.event {
+        transform: scale(0.5);
+        right: -4rem;
+      }
+      &.store {
+        transform: scale(0.5);
+        bottom: -70px;
+        right: -6rem;
+      }
+      &.sale {
+        transform: scale(0.6);
+        right: -2rem;
+      }
+      &.hot {
+        transform: scale(0.6);
+        right: -5rem;
+        bottom: -75px;
+      }
+      &.activity {
+        transform: scale(0.6);
+        right: -5rem;
+        bottom: -75px;
+      }
+    }
+  }
+}

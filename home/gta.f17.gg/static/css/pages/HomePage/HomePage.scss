@@ -1,0 +1,18 @@
+.home-container {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .bg-image {
+    position: absolute;
+    width: 100%;
+    z-index: -99;
+  }
+
+  .vector-image {
+    position: absolute;
+    width: 100%;
+    top: -16px;
+    z-index: 0;
+  }
+}
